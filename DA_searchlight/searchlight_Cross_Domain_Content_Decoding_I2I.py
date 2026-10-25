@@ -109,7 +109,7 @@ def search_light_ALI(
     y_test,
     groups=None,
     scoring=None,
-    n_jobs=2,
+    n_jobs=-1,
     verbose=0,
     i_iter=0,
 ):
