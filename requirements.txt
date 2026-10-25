@@ -1,0 +1,20 @@
+# Python dependencies (tested with Python 3.10/3.11; versions in comments are the ones tested).
+# FSL is also required for the MNI warp step (applywarp): https://fsl.fmrib.ox.ac.uk
+
+numpy>=1.24        # 2.3.3
+scipy>=1.10        # 1.16.2
+pandas>=2.0        # 2.3.3
+scikit-learn>=1.3  # 1.7.2
+nilearn>=0.13      # 0.13.0
+nibabel>=5.0       # 5.3.3
+joblib>=1.3        # 1.5.2
+tqdm>=4.65         # 4.67.1
+matplotlib>=3.7    # 3.10.7
+
+# Domain adaptation (ADAPT library). The searchlight scripts import TensorFlow at start-up,
+# even though the paper only uses Subspace Alignment (SA).
+adapt>=0.4.5       # 0.4.5
+tensorflow>=2.20   # 2.20.0
+
+# Only needed to run CCN2026_GitHub_Results.ipynb
+jupyter
